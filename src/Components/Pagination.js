@@ -1,7 +1,7 @@
 import { Grid, Button, Typography } from '@material-ui/core';
 import { useStyles } from '../Styles';
 
-const Pagination = ({ pageData }) => {
+const Pagination = ({ pageData, onPageChange }) => {
     const classes = useStyles()
     return (
         <>
@@ -25,17 +25,19 @@ const Pagination = ({ pageData }) => {
                     <Button
                         variant="contained"
                         color="primary"
-                        disabled={true}
-                        className={classes.paginationBtn}>
-                        Previous
+                        disabled={!(pageData.currentPage > 1)}
+                        className={classes.paginationBtn}
+                        onClick={() => { onPageChange(pageData.currentPage - 1) }}>
+                        Previous {}
                     </Button>
                 </Grid>
                 <Grid item xs={3} sm={3} md={2} lg={1}>
                     <Button
                         variant="contained"
                         color="primary"
-                        disabled={true}
-                        className={classes.paginationBtn}>
+                        disabled={!(pageData.currentPage < pageData.totalPage)}
+                        className={classes.paginationBtn}
+                        onClick={() => { onPageChange(pageData.currentPage + 1) }}>
                         Next
                     </Button>
                 </Grid>
