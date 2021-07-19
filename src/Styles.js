@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     headerMenuButton: {
-        marginRight: theme.spacing(2),
+        marginRight: theme.spacing(0),
     },
 
 
@@ -70,7 +70,8 @@ const useStyles = makeStyles((theme) => ({
         right: 0,
         left: 0,
         position: 'fixed'
-    }
+    },
+    
 }))
 
 export { useStyles };

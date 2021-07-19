@@ -4,7 +4,7 @@ import Footer from './Components/Footer'
 import Articles from './Components/Articles'
 import Pagination from './Components/Pagination'
 import { useState, useEffect } from 'react';
-
+  
 
 function App() {
   const [loading, setLoading] = useState(false);

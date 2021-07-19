@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Switch from '@material-ui/core/Switch';
 import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
+import Logo from '../logo.png';
 
 
 const Header = () => {
@@ -15,7 +15,12 @@ const Header = () => {
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" className={classes.headerMenuButton} color="inherit" aria-label="menu">
-                        <SearchIcon />
+                        <img src={Logo} alt="source-logo" style={
+                            {
+                                width: "40px",
+                                height: "40px",
+                            }
+                        } />
                     </IconButton>
                     <Typography variant="h6" className={classes.root}>
                         Source

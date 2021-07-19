@@ -8,8 +8,8 @@ const Footer = () => {
                 style={{
                     padding: 10
                 }}
-                variant="h5">
-                RTKEL v1.0.0 &copy;
+                variant="subtitle1" component="p">
+                Source V0.1.0 &copy;
             </Typography>
         </center>
     );
