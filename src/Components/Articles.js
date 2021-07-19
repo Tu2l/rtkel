@@ -12,7 +12,7 @@ const Articles = ({ data }) => {
             spacing={1}
             container
             direction="row"
-            justifyContent="space-between"
+            justifyContent="center"
             alignItems="center"
             className={classes.root}>
             {

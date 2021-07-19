@@ -37,6 +37,30 @@ const useStyles = makeStyles((theme) => ({
     articleMedia: {
         height: 140,
     },
+
+    darkText: {
+        padding: theme.spacing(1),
+        marginRight: theme.spacing(0.1),
+        backgroundColor: "#000000",
+        borderRadius: "6px",
+        display: "inline",
+    },
+
+    learnMoreBtn: {
+        width: "100%",
+        height: "100%",
+        padding: theme.spacing(1),
+        margin: theme.spacing(1),
+    },
+    paginationBtn: {
+        width: "100%",
+        height: "100%",
+        padding: theme.spacing(1),
+
+    },
+    searchResultText:{
+      
+    }
 }))
 
 export { useStyles };
