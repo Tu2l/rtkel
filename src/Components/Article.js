@@ -82,13 +82,13 @@ const Article = ({ article }) => {
                         {article.twitter_account}
                     </Typography>
 
-                    <Typography
+                    {/* <Typography
                         variant="body2"
                         color="primary"
                         component="p"
                         className={classes.darkText}>
                         {article.country}
-                    </Typography>
+                    </Typography> */}
 
                     <Typography
                         variant="body2"
