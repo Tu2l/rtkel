@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
     darkText: {
         padding: theme.spacing(1),
-        marginRight: theme.spacing(0.2),
+        marginRight: "5px",
         backgroundColor: "#cacaca",
         borderRadius: "6px",
         display: "inline",
