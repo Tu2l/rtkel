@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/rtkel/static/js/main.569556a2.chunk.js",
-    "main.js.map": "/rtkel/static/js/main.569556a2.chunk.js.map",
+    "main.js": "/rtkel/static/js/main.6a01dbda.chunk.js",
+    "main.js.map": "/rtkel/static/js/main.6a01dbda.chunk.js.map",
     "runtime-main.js": "/rtkel/static/js/runtime-main.5464fa6a.js",
     "runtime-main.js.map": "/rtkel/static/js/runtime-main.5464fa6a.js.map",
-    "static/js/2.86919010.chunk.js": "/rtkel/static/js/2.86919010.chunk.js",
-    "static/js/2.86919010.chunk.js.map": "/rtkel/static/js/2.86919010.chunk.js.map",
+    "static/js/2.a47f7aa8.chunk.js": "/rtkel/static/js/2.a47f7aa8.chunk.js",
+    "static/js/2.a47f7aa8.chunk.js.map": "/rtkel/static/js/2.a47f7aa8.chunk.js.map",
     "static/js/3.b6fcde0c.chunk.js": "/rtkel/static/js/3.b6fcde0c.chunk.js",
     "static/js/3.b6fcde0c.chunk.js.map": "/rtkel/static/js/3.b6fcde0c.chunk.js.map",
     "index.html": "/rtkel/index.html",
-    "static/js/2.86919010.chunk.js.LICENSE.txt": "/rtkel/static/js/2.86919010.chunk.js.LICENSE.txt",
+    "static/js/2.a47f7aa8.chunk.js.LICENSE.txt": "/rtkel/static/js/2.a47f7aa8.chunk.js.LICENSE.txt",
     "static/media/logo.d8ca855d.png": "/rtkel/static/media/logo.d8ca855d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5464fa6a.js",
-    "static/js/2.86919010.chunk.js",
-    "static/js/main.569556a2.chunk.js"
+    "static/js/2.a47f7aa8.chunk.js",
+    "static/js/main.6a01dbda.chunk.js"
   ]
 }
