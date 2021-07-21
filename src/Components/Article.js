@@ -51,19 +51,19 @@ const Article = ({ article }) => {
     const classes = useStyles();
     return (
         <Card
-            className={classes.root}>
+            className={classes.articleRoot}>
             <CardActionArea>
                 <CardMedia
                     className={classes.articleMedia}
                     image={article.media}
                     title={article.title}
-                />
-                <CardContent>
+                >
+
                     <Typography
                         variant="body2"
                         color="primary"
                         component="p"
-                        className={classes.darkText}
+                        className={(article.clean_url) && classes.darkText}
                         onClick={() => {
                             window.open((isValidHttpUrl(article.clean_url)) ? article.clean_url : "https://" + article.clean_url, "_blank")
                         }}
@@ -75,14 +75,23 @@ const Article = ({ article }) => {
                         variant="body2"
                         color="primary"
                         component="p"
-                        className={classes.darkText}
-                        onClick={() => {
-                            window.open((isValidHttpUrl(article.twitter_account)) ? article.twitter_account : "https://twitter.com/" + article.twitter_account, "_blank")
-                        }}>
-                        {article.twitter_account}
+                        className={(article.published_date) && classes.darkText}>
+                        {timeAgo(new Date(article.published_date))}
                     </Typography>
+                </CardMedia>
 
-                    {/* <Typography
+                <Typography
+                    variant="body2"
+                    color="primary"
+                    component="p"
+                    className={(article.twitter_account) && classes.darkText}
+                    onClick={() => {
+                        window.open((isValidHttpUrl(article.twitter_account)) ? article.twitter_account : "https://twitter.com/" + article.twitter_account, "_blank")
+                    }}>
+                    {article.twitter_account}
+                </Typography>
+
+                {/* <Typography
                         variant="body2"
                         color="primary"
                         component="p"
@@ -90,13 +99,8 @@ const Article = ({ article }) => {
                         {article.country}
                     </Typography> */}
 
-                    <Typography
-                        variant="body2"
-                        color="primary"
-                        component="p"
-                        className={classes.darkText}>
-                        {timeAgo(new Date(article.published_date))}
-                    </Typography>
+
+                <CardContent className={classes.articleBody}>
 
                     <Typography
                         gutterBottom
@@ -111,11 +115,10 @@ const Article = ({ article }) => {
                     <Typography
                         variant="body2"
                         color="textSecondary"
-                        component="p">
+                        component="p"
+                        className={classes.articleSummary}>
                         {article.summary}
                     </Typography>
-                </CardContent>
-                <CardActions>
                     <Button
                         variant="outlined"
                         className={classes.learnMoreBtn}
@@ -124,6 +127,8 @@ const Article = ({ article }) => {
                         }}>
                         Learn more
                     </Button>
+                </CardContent>
+                <CardActions>
                 </CardActions>
             </CardActionArea>
         </Card>
