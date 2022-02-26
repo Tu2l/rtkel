@@ -7,7 +7,6 @@ const SearchBar = ({ onSearch, searchWord, disableSearch }) => {
     let keyword = searchWord;
 
     return (
-
         <Grid container alignContent="center" alignItems="center" className={classes.searchForm}>
             <Grid item xs={10} sm={10} md={10} lg={10} >
                 <TextField
@@ -25,11 +24,8 @@ const SearchBar = ({ onSearch, searchWord, disableSearch }) => {
                         }
                     }}
                     onChange={(e) => {
-
                         keyword = e.target.value
                     }}
-
-
                 />
             </Grid>
             <Grid item xs={2} sm={2} md={2} lg={2} >
